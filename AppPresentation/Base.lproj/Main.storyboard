@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12J-Rc-sky">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12J-Rc-sky">
                                 <rect key="frame" x="140" y="358" width="146" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" systemColor="systemIndigoColor"/>
                                 <nil key="highlightedColor"/>
@@ -26,6 +25,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="12J-Rc-sky" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fdr-PJ-nqp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="12J-Rc-sky" secondAttribute="trailing" constant="128" id="Pzb-HF-hAw"/>
+                            <constraint firstItem="12J-Rc-sky" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="358" id="fGa-cp-6LD"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -48,8 +52,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggj-yG-MxG">
-                                <rect key="frame" x="16" y="108" width="382" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ggj-yG-MxG">
+                                <rect key="frame" x="16" y="108" width="382" height="30.333333333333343"/>
                                 <color key="tintColor" systemColor="systemPinkColor"/>
                                 <fontDescription key="fontDescription" name="SnellRoundhand-Bold" family="Snell Roundhand" pointSize="24"/>
                                 <color key="textColor" systemColor="systemPurpleColor"/>
@@ -70,6 +74,7 @@
                         <viewLayoutGuide key="safeArea" id="Oyi-ql-3dj"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                         <constraints>
+                            <constraint firstItem="I4F-ls-qib" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ggj-yG-MxG" secondAttribute="bottom" constant="10" id="3Bc-26-xeR"/>
                             <constraint firstItem="I4F-ls-qib" firstAttribute="centerX" secondItem="Oyi-ql-3dj" secondAttribute="centerX" id="3Kq-YG-R6U"/>
                             <constraint firstItem="RWY-nL-rzT" firstAttribute="centerX" secondItem="Oyi-ql-3dj" secondAttribute="centerX" id="EIh-Vk-oaN"/>
                             <constraint firstItem="Oyi-ql-3dj" firstAttribute="bottom" secondItem="RWY-nL-rzT" secondAttribute="bottom" constant="32" id="IHJ-YA-oLz"/>
